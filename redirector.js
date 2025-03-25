@@ -1,2 +1,2 @@
-// send everything to rvotd for now
-location.replace(location.origin + "/rvotd/index.html");
+// if we're using randomverseofthe.day, send to rvotd (otherwise, do nothing)
+if (location.hostname === 'randomverseofthe.day') location.replace(location.origin + '/rvotd/index.html')
